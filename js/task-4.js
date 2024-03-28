@@ -17,6 +17,8 @@ function getShippingCost(country) {
             console.log("Sorry, there is no delivery to your country")
 
     }
+
+    return country
 }
 
 console.log(getShippingCost("Australia")); // "Shipping to Australia will cost 170 credits"

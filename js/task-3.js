@@ -4,11 +4,15 @@ console.log("spam".toLowerCase())
 console.log("spam".toUpperCase())
 
 function checkForSpam(message) {
-    if (message = "sale" && "spam") {
-        console.log(true);
+    if (message = `sale`) {
+        console.log(true)
+    } else if (message = `spam`) {
+        console.log(true)
     } else {
-        console.log(false);
+        console.log(false)
     }
+
+    return message;
 }
 
 console.log(checkForSpam("Latest technology news")); // false
