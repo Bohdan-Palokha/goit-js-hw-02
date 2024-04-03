@@ -1,18 +1,13 @@
-console.log("sale".toLowerCase())
-console.log("sale".toUpperCase())
-console.log("spam".toLowerCase())
-console.log("spam".toUpperCase())
 
 function checkForSpam(message) {
-    if (message = `sale`) {
-        console.log(true)
-    } else if (message = `spam`) {
-        console.log(true)
-    } else {
-        console.log(false)
-    }
 
-    return message;
+    if (message.includes(sale.toLowerCase().toUpperCase())) {
+        return true
+    } if (message.includes(spam.toLowerCase().toUpperCase())) {
+        return true
+    } else {
+        return false
+    }
 }
 
 console.log(checkForSpam("Latest technology news")); // false
