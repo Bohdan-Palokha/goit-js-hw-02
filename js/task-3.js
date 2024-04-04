@@ -1,13 +1,35 @@
 
 function checkForSpam(message) {
 
-    if (message.includes(sale.toLowerCase().toUpperCase())) {
+    if (message.includes("sale".toLowerCase())) {
         return true
-    } if (message.includes(spam.toLowerCase().toUpperCase())) {
+    } if (message.includes("sale".toUpperCase())) {
+        return true
+    } if (message.includes("spam".toLowerCase())) {
+        return true
+    } if (message.includes("spam".toUpperCase())) {
         return true
     } else {
         return false
     }
+
+    // switch (message) {
+    //     case message.includes("sale".toLowerCase()):
+    //         return true;
+    //         break;
+    //     case message.includes("sale".toUpperCase()):
+    //         return true;
+    //         break;
+    //     case message.includes("spam".toLowerCase()):
+    //         return true;
+    //         break;
+    //     case message.includes("spam".toUpperCase()):
+    //         return true;
+    //         break;
+    //     default:
+    //         return false;
+    // }
+
 }
 
 console.log(checkForSpam("Latest technology news")); // false
