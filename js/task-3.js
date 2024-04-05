@@ -1,16 +1,12 @@
 
 function checkForSpam(message) {
+    let lowerCaseMessage = message.toLowerCase();
 
-    if (message.includes("sale".toLowerCase())) {
-        return true
-    } if (message.includes("sale".toUpperCase())) {
-        return true
-    } if (message.includes("spam".toLowerCase())) {
-        return true
-    } if (message.includes("spam".toUpperCase())) {
-        return true
+    // Перевіряємо чи містить рядок заборонені слова
+    if (lowerCaseMessage.includes('spam') || lowerCaseMessage.includes('sale')) {
+        return true;
     } else {
-        return false
+        return false;
     }
 
     // switch (message) {
