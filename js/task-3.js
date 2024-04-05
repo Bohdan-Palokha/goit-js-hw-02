@@ -2,29 +2,12 @@
 function checkForSpam(message) {
     let lowerCaseMessage = message.toLowerCase();
 
-    // Перевіряємо чи містить рядок заборонені слова
     if (lowerCaseMessage.includes('spam') || lowerCaseMessage.includes('sale')) {
         return true;
     } else {
         return false;
     }
 
-    // switch (message) {
-    //     case message.includes("sale".toLowerCase()):
-    //         return true;
-    //         break;
-    //     case message.includes("sale".toUpperCase()):
-    //         return true;
-    //         break;
-    //     case message.includes("spam".toLowerCase()):
-    //         return true;
-    //         break;
-    //     case message.includes("spam".toUpperCase()):
-    //         return true;
-    //         break;
-    //     default:
-    //         return false;
-    // }
 
 }
 
